@@ -45,7 +45,7 @@ Maksimal 150 kata. Jangan gunakan format markdown atau bullet poin.
     const resp = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}` },
-      body: JSON.stringify({ model: "deepseek/deepseek-chat", max_tokens: 250, messages: [{ role: "user", content: prompt }] })
+      body: JSON.stringify({ model: "nvidia/nemotron-3-super-120b-a12b:free", max_tokens: 250, messages: [{ role: "user", content: prompt }] })
     });
 
     if (!resp.ok) {
