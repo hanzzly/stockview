@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ],
+  "functions": {
+    "api/analyze.js": { "maxDuration": 30 },
+    "api/stock.js": { "maxDuration": 15 }
+  }
+}
